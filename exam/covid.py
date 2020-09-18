@@ -13,8 +13,6 @@ for lines in f:
 
 def fetchdata(**kwargs):
     state=(kwargs["state"])
-    if(state not in Final):
-        print("There is no state")
     if("parameter" in kwargs):
         value=kwargs["parameter"]
         print(Final[state][value])
